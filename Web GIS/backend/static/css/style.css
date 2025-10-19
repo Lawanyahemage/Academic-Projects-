@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, white 65%, #add6e4 70%);
+    
+}
+
+
+
+
+.ol-popup {
+  position: absolute;
+  background-color: white;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #cccccc;
+  bottom: 12px;
+  left: -50px;
+  min-width: 150px;
+}
+
+.ol-popup:after, .ol-popup:before {
+  top: 100%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.ol-popup:after {
+  border-top-color: white;
+  border-width: 10px;
+  left: 48px;
+  margin-left: -10px;
+}
+
+.ol-popup:before {
+  border-top-color: #dee6ea;
+  border-width: 11px;
+  left: 48px;
+  margin-left: -11px;
+}
+
+#map {
+  width: 100%;
+  height: 100vh;
+  border: 1px solid #ccc;
+}
+
+#button-container {
+  display: flex;
+  justify-content: space-between; /* One button left, one right */
+  margin-top: 15px;
+}
+
+#pick-location {
+  position: absolute;
+  top: 500px; /* Distance from the top */
+  left: 15px; /* Distance from the left */
+  margin: 0;
+  padding: 8px 12px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #8395bc;
+  height: 100px;
+  width: 140px;
+  cursor: pointer;
+  z-index: 1000; /* Ensure the button appears on top of the map */
+  border: 2px solid black;       /* Black border around the button */
+  border-radius: 5px;
+}
+
+
+#book-now,
+#cancel-location {
+  width: 120px;             /* Set equal width */
+  height: 50px;             /* Same height */
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#book-now {
+  background-color: #46ab28;
+  color: #fff;
+}
+
+#cancel-location {
+  background-color: #f44336;
+  color: #fff;
+  display: none; /* Initially hidden */
+}
+
+#result-container {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 15px 0;
+  max-width: 400px;
+  justify-content: center;
+}
+
+#result-container h4 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+#result {
+  margin: 10px;
+  font-family: Arial, sans-serif;
+}
+
+
+
+
